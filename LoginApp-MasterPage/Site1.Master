@@ -1,0 +1,44 @@
+﻿    <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="LoginApp_MasterPage.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+<table style="font-family: Arial">
+    <tr>
+        <td colspan="2" style="width: 800px; height: 80px; text-align: center; 
+            background-color: #A28089;">
+            <h1 style="color:white">
+                Login Page
+            </h1>
+        </td>
+    </tr>
+    <tr>
+        <td style="height: 500px; background-color: #D8D8D8; width: 150px">
+            <h3>
+                Menu</h3>
+        </td>
+        <td style="height: 500px; background-color: #E6E6E6; width: 650px">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <h1>Section that changes on a page by page basis</h1>
+                    </asp:ContentPlaceHolder>
+            
+            </asp:ContentPlaceHolder>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="background-color: #BDBDBD; text-align: center">
+            <b>Credits</b>
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
